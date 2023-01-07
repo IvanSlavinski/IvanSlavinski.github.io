@@ -77,7 +77,6 @@ a {
 }
 
 h3 {
-  font-weight: 50;
   font-size: 1.5em;
   text-align: center;
   border-bottom: solid 2px #333;
@@ -96,7 +95,6 @@ h3 {
 }
 
 p {
-  font-weight: 50;
   font-size: 0.9em;
   text-align: justify;
 }
