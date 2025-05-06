@@ -95,6 +95,10 @@ div.header-right {
   object-fit: contain;
 }
 
+.button.button_link:hover {
+  transform: rotate(360deg);
+}
+
 /* --- Section Titles --- */
 h3 {
   font-size: 1.6em;
