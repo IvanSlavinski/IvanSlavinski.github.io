@@ -60,6 +60,11 @@ a:hover {
   text-align: right;
 }
 
+div.header-right {
+  float: right;
+  text-align: right;
+}
+
 .icons_links {
   list-style: none;
   display: flex;
@@ -70,7 +75,7 @@ a:hover {
 .icons_links li {
   list-style-type: none;
   display: inline-block;
-  margin: 0 5px;
+  margin: 0 10px;
 }
 
 .button {
