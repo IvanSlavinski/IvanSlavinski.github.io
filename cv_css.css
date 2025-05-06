@@ -40,6 +40,12 @@ a:hover {
   margin: 0;
 }
 
+.header-right h2 {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
