@@ -78,7 +78,7 @@ div.header-right {
   margin: 0 10px;
 }
 
-.button {
+.button_link {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -87,6 +87,7 @@ div.header-right {
   justify-content: center;
   overflow: hidden;
   margin: 0 5px;
+  transition: all 0.5s ease;
 }
 
 .button img {
@@ -213,7 +214,7 @@ ul.hard_skills_qa,
     font-size: 15px;
   }
 
-  .container.header-contianer {
+  .container.header-container {
     flex-direction: column;
     align-items: flex-start;
     text-align: left;
