@@ -21,7 +21,7 @@ a:hover {
 }
 
 /* --- Header --- */
-.container.header-contianer {
+.container.header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
