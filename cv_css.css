@@ -40,9 +40,13 @@ a:hover {
   margin: 0;
 }
 
-.header-right {
+div.header-right {
   float: right;
   width: 300px;
+  text-align: right;
+}
+
+.header-right p {
   text-align: right;
 }
 
