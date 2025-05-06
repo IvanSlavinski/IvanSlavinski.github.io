@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 /* --- Global Styles --- */
 body {
   background-color: white;
@@ -219,6 +223,7 @@ ul.hard_skills_qa,
   bottom: 100px;
   right: 20px;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .export-button:hover {
