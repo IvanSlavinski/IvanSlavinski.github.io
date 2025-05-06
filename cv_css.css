@@ -279,3 +279,8 @@ ul.hard_skills_qa,
     width: 40px;
   }
 }
+
+#cv-content {
+  padding: 20px;
+  box-sizing: border-box;
+}
