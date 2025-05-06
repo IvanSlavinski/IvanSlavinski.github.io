@@ -216,18 +216,25 @@ ul.hard_skills_qa,
 }
 
 /* --- Export Button --- */
-.export-button img{
+.export-button {
   height: 50px;
   width: 50px;
   position: fixed;
   bottom: 100px;
   right: 20px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease; /* Apply transition here */
 }
 
 .export-button:hover {
-  transform: scale(1.2);
+  transform: scale(1.2); /* Scale the container, not the img */
+}
+
+.export-button img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  pointer-events: none; /* Optional: prevents img from capturing hover */
 }
 
 
