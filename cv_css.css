@@ -221,9 +221,9 @@ ul.hard_skills_qa,
   cursor: pointer;
 }
 
-/* --- .export-button:hover {
+.export-button:hover {
   transform: scale(1.2);
-}--- */
+}
 
 
 /* --- Responsive Design --- */
