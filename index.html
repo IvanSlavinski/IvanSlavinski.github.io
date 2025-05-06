@@ -3,181 +3,187 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ivan Slavinski. Curriculum Vitae.</title>
     <link type="text/css" rel="stylesheet" href="cv_css.css">
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 </head>
 
 <body>
-    <div class="container header-container">
-        <div class="row header">
-            <div class="header-left">
-                <h1>Ivan Slavinski</h1>
-                <h2>Fullstack QA Engineer | C#</h2>
-            </div>
-            <div class="header-right">
-                <ul class="icons_links">
-                    <li>
-                        <a target="_blank" href="https://github.com/IvanSlavinski">
-                            <div class="button_link"><img src="images/github_svg.svg" alt="GitHub"></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://linkedin.com/in/slavinskiivan">
-                            <div class="button_link"><img src="images/linkedin_SVG.svg" alt="LinkedIn"></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="tg://resolve?domain=ivanslavinski">
-                            <div class="button_link"><img src="images/telegram_svg.svg" alt="Telegram"></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="mailto:slavinskiivan@gmail.com">
-                            <div class="button_link"><img src="images/gmail-svg.svg" alt="Gmail"></div>
-                        </a>
-                    </li>
-                </ul>
-                <h2>Email: <a href="mailto:slavinskiivan@gmail.com" target="_blank">slavinskiivan@gmail.com</a></h2>
+    <a id="top"></a>
+    <div id="cv-content">
+        <div class="container header-container">
+            <div class="row header">
+                <div class="header-left">
+                    <h1>Ivan Slavinski</h1>
+                    <h2>Fullstack QA Engineer | C#</h2>
+                </div>
+                <div class="header-right">
+                    <ul class="icons_links">
+                        <li>
+                            <a target="_blank" href="https://github.com/IvanSlavinski">
+                                <div class="button_link"><img src="images/github_svg.svg" alt="GitHub"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://linkedin.com/in/slavinskiivan">
+                                <div class="button_link"><img src="images/linkedin_SVG.svg" alt="LinkedIn"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tg://resolve?domain=ivanslavinski">
+                                <div class="button_link"><img src="images/telegram_svg.svg" alt="Telegram"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:slavinskiivan@gmail.com">
+                                <div class="button_link"><img src="images/gmail-svg.svg" alt="Gmail"></div>
+                            </a>
+                        </li>
+                    </ul>
+                    <h2>Email: <a href="mailto:slavinskiivan@gmail.com" target="_blank">slavinskiivan@gmail.com</a></h2>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="wrapper">
-        <div class="container skills-container">
-            <h3>Hard skills</h3>
-            <div class="row skills">
-                <p>AQA</p>
-                <ul class="hard_skills_aqa">
-                    <li>Web UI automation tests development (C#, Selenium, Boa.Constrictor (screenplay pattern))</li>
-                    <li>API automation tests development</li>
-                </ul>
-                <p>QA:</p>
-                <ul class="hard_skills_qa">
-                    <li>Functional testing</li>
-                    <li>UI/UX testing</li>
-                    <li>Smoke testing</li>
-                    <li>Regression testing</li>
-                    <li>Acceptance testing</li>
-                    <li>Exploratory testing</li>
-                    <li>Localization testing</li>
-                    <li>Cross-platform</li>
-                    <li>Cross-browser testing</li>
-                    <li>Test design (creating test documentation, checklists, test cases, bug reports, improvement suggestions, test result reports)</li>
-                </ul>
-                <p>Client side:</p>
-                <ul>
-                    <li>HTML/CSS/JSON</li>
-                </ul>
-                <p>Databases:</p>
-                <ul>
-                    <li>MSQL Server</li>
-                    <li>SQL Server Profiler</li>
-                    <li>PostgreSQL</li>
-                    <li>MongoDB</li>
-                </ul>
-                <p>Tools:</p>
-                <ul>
-                    <li>Visual Studio</li>
-                    <li>VS Code</li>
-                    <li>Git</li>
-                    <li>SourceTree</li>
-                    <li>Postman</li>
-                    <li>TeamCity</li>
-                    <li>Raygun</li>
-                    <li>Chrome DevTools</li>
-                    <li>Charles Proxy</li>
-                    <li>JMeter</li>
-                    <li>AWS Management Console</li>
-                </ul>
-                <p>Defect tracking systems:</p>
-                <ul>
-                    <li>Jira</li>
-                    <li>Raygun</li>
-                </ul>
-            </div>
-        </div>
-        <div class="container experience-container">
-            <h3>Working Experience</h3>
-        
-            <div class="experience-entry">
-                <div class="job-title">
-                    <p><strong>DevTeamInc</strong></p>
-                    <p>Outsource company.</p>
-                    <p><strong>Fullstack QA Engineer</strong></p>
-                    <p>February 2023 - June 2025</p>
-                </div>
-                <div class="job-description">
-                    <p><strong>Project Name:</strong> Confidential (Subject to NDA)</p>
-                    <p><strong>Automation Tests Development:</strong></p>
-                    <ul>
-                        <li>Developed automation tests from scratch using C# and the Boa.Constrictor lib (screenplay pattern)</li>
-                        <li>Implemented automated Smoke Tests, integrated into CICD (TeamCity)</li>
-                        <li>Automated 20% of Regression tests for improved testing efficiency</li>
+        <div class="wrapper">
+            <div class="container skills-container">
+                <h3>Hard skills</h3>
+                <div class="row skills">
+                    <p>AQA</p>
+                    <ul class="hard_skills_aqa">
+                        <li>Web UI automation tests development (C#, Selenium, Boa.Constrictor (screenplay pattern))</li>
+                        <li>API automation tests development</li>
                     </ul>
-        
-                    <p><strong>Manual Testing:</strong></p>
-                    <ul>
-                        <li>Performed testing on private ticket sales admin panel</li>
-                        <li>Tested public and private APIs</li>
-                        <li>Worked with scheduled SQL jobs</li>
-                        <li>Experienced in Windows Services, Scheduled Tasks, and Hangfire (Scheduled Jobs)</li>
-                        <li>Tested AWS Lambdas using AWS Management Console</li>
-                        <li>Validated asynchronous notifications (SignalR)</li>
-                        <li>Utilized Raygun for error monitoring and RUM report generation</li>
-                        <li>Created test documentation: checklists, test cases, bug reports, test strategies, test result reports</li>
-                    </ul>
-                </div>
-            </div>
-        
-            <div class="experience-entry">
-                <div class="job-title">
-                    <p><strong>ITX</strong></p>
-                    <p>"UAT testing, functional testing", outsource company.</p>
-                    <p><strong>QA Engineer</strong></p>
-                    <p>August 2022 - Present</p>
-                </div>
-                <div class="job-description">
-                    <p><strong>Web/mobile testing (Capital.com):</strong></p>
-                    <ul>
-                        <li>Ad-hoc testing</li>
+                    <p>QA:</p>
+                    <ul class="hard_skills_qa">
+                        <li>Functional testing</li>
+                        <li>UI/UX testing</li>
+                        <li>Smoke testing</li>
+                        <li>Regression testing</li>
+                        <li>Acceptance testing</li>
                         <li>Exploratory testing</li>
-                        <li>Smoke testing</li>
-                        <li>Critical path testing</li>
-                        <li>Retest</li>
-                        <li>UI/UX testing</li>
-                        <li>Cross-platform, cross-browser testing</li>
                         <li>Localization testing</li>
-                        <li>Test documentation: checklists, test cases, bug reports, test result reports</li>
+                        <li>Cross-platform</li>
+                        <li>Cross-browser testing</li>
+                        <li>Test design (creating test documentation, checklists, test cases, bug reports, improvement suggestions, test result reports)</li>
                     </ul>
-        
-                    <p><strong>Mobile testing (CryptoGram – Android):</strong></p>
+                    <p>Client side:</p>
                     <ul>
-                        <li>Ad-hoc testing</li>
-                        <li>Smoke testing</li>
-                        <li>UI/UX testing</li>
-                        <li>Test documentation: checklists, test cases, bug reports, test result reports</li>
+                        <li>HTML/CSS/JSON</li>
                     </ul>
-        
-                    <p><strong>Web testing (Financial Times):</strong></p>
+                    <p>Databases:</p>
                     <ul>
-                        <li>Testing and gathering statistics of advertisement shows on financial platforms with/without behavioral targeting of shows</li>
+                        <li>MSQL Server</li>
+                        <li>SQL Server Profiler</li>
+                        <li>PostgreSQL</li>
+                        <li>MongoDB</li>
+                    </ul>
+                    <p>Tools:</p>
+                    <ul>
+                        <li>Visual Studio</li>
+                        <li>VS Code</li>
+                        <li>Git</li>
+                        <li>SourceTree</li>
+                        <li>Postman</li>
+                        <li>TeamCity</li>
+                        <li>Raygun</li>
+                        <li>Chrome DevTools</li>
+                        <li>Charles Proxy</li>
+                        <li>JMeter</li>
+                        <li>AWS Management Console</li>
+                    </ul>
+                    <p>Defect tracking systems:</p>
+                    <ul>
+                        <li>Jira</li>
+                        <li>Raygun</li>
                     </ul>
                 </div>
             </div>
-        </div>
-
-        <div class="container education-container">
-            <h3>Education</h3>
-            <div class="row education">
-                <h4>QA Engineer author's course by Vadim Ksendzov</h4>
-                <p>August 2022 - January 2023</p></br>
+            <div class="container experience-container">
+                <h3>Working Experience</h3>
+            
+                <div class="experience-entry">
+                    <div class="job-title">
+                        <p><strong>DevTeamInc</strong></p>
+                        <p>Outsource company.</p>
+                        <p><strong>Fullstack QA Engineer</strong></p>
+                        <p>February 2023 - June 2025</p>
+                    </div>
+                    <div class="job-description">
+                        <p><strong>Project Name:</strong> Confidential (Subject to NDA)</p>
+                        <p><strong>Automation Tests Development:</strong></p>
+                        <ul>
+                            <li>Developed automation tests from scratch using C# and the Boa.Constrictor lib (screenplay pattern)</li>
+                            <li>Implemented automated Smoke Tests, integrated into CICD (TeamCity)</li>
+                            <li>Automated 20% of Regression tests for improved testing efficiency</li>
+                        </ul>
+            
+                        <p><strong>Manual Testing:</strong></p>
+                        <ul>
+                            <li>Performed testing on private ticket sales admin panel</li>
+                            <li>Tested public and private APIs</li>
+                            <li>Worked with scheduled SQL jobs</li>
+                            <li>Experienced in Windows Services, Scheduled Tasks, and Hangfire (Scheduled Jobs)</li>
+                            <li>Tested AWS Lambdas using AWS Management Console</li>
+                            <li>Validated asynchronous notifications (SignalR)</li>
+                            <li>Utilized Raygun for error monitoring and RUM report generation</li>
+                            <li>Created test documentation: checklists, test cases, bug reports, test strategies, test result reports</li>
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="experience-entry">
+                    <div class="job-title">
+                        <p><strong>ITX</strong></p>
+                        <p>"UAT testing, functional testing", outsource company.</p>
+                        <p><strong>QA Engineer</strong></p>
+                        <p>August 2022 - Present</p>
+                    </div>
+                    <div class="job-description">
+                        <p><strong>Web/mobile testing (Capital.com):</strong></p>
+                        <ul>
+                            <li>Ad-hoc testing</li>
+                            <li>Exploratory testing</li>
+                            <li>Smoke testing</li>
+                            <li>Critical path testing</li>
+                            <li>Retest</li>
+                            <li>UI/UX testing</li>
+                            <li>Cross-platform, cross-browser testing</li>
+                            <li>Localization testing</li>
+                            <li>Test documentation: checklists, test cases, bug reports, test result reports</li>
+                        </ul>
+            
+                        <p><strong>Mobile testing (CryptoGram – Android):</strong></p>
+                        <ul>
+                            <li>Ad-hoc testing</li>
+                            <li>Smoke testing</li>
+                            <li>UI/UX testing</li>
+                            <li>Test documentation: checklists, test cases, bug reports, test result reports</li>
+                        </ul>
+            
+                        <p><strong>Web testing (Financial Times):</strong></p>
+                        <ul>
+                            <li>Testing and gathering statistics of advertisement shows on financial platforms with/without behavioral targeting of shows</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="container languages-container">
-            <h3>Languages</h3>
-            <div class="row languages">
-                <p>    - English - Advanced, C1 ESOL (Cambridge Assessment English).<a href="https://drive.google.com/file/d/1ozG2Fyoa7sdzKQz_NWgN0Otr_0lnzlPo/view"><em>link</em></a></p>
-                <p>    - Russian - Native.</p>
+
+            <div class="container education-container">
+                <h3>Education</h3>
+                <div class="row education">
+                    <h4>QA Engineer author's course by Vadim Ksendzov</h4>
+                    <p>August 2022 - January 2023</p><br>
+                </div>
+            </div>
+            <div class="container languages-container">
+                <h3>Languages</h3>
+                <div class="row languages">
+                    <p>    - English - Advanced, C1 ESOL (Cambridge Assessment English).<a href="https://drive.google.com/file/d/1ozG2Fyoa7sdzKQz_NWgN0Otr_0lnzlPo/view"><em>link</em></a></p>
+                    <p>    - Russian - Native.</p>
+                </div>
+            </div>
         </div>
     </div>
     <div class="container footer-container">
@@ -185,7 +191,36 @@
             © 2025 Ivan Slavinski
         </p>
     </div>
-    <a href="#top"><img src="images/top_svg.svg" class="button button_top"></a>
+    <a href="#top"><img src="images/top_svg.svg" class="button button_top" aria-label="Scroll to top"></a>
+    <div id="download-cv" class="button export-button"><img src="images/download-file-svg.svg" aria-label="Export to PDF"></div>
+
+    <script>
+        const element = document.getElementById('cv-content');
+    
+        const opt = {
+            margin:       0.5,
+            filename:     'Ivan_Slavinski_CV.pdf',
+            image:        { type: 'jpeg', quality: 0.98 },
+            html2canvas:  { scale: 2 },
+            jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
+        };
+    
+        function downloadPDF() {
+            html2pdf().set(opt).from(element).save();
+        }
+    
+        const btn = document.getElementById('download-cv');
+        btn.tabIndex = 0;
+    
+        btn.addEventListener('click', downloadPDF);
+        btn.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                downloadPDF();
+            }
+        });
+    </script>
+
 </body>
 
 </html>
