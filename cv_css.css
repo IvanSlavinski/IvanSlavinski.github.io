@@ -1,93 +1,17 @@
-@media screen and (prefers-reduced-motion: no-preference) {
-  html {
-    scroll-behavior: smooth;
-  }
-}
-
+/* --- Global Styles --- */
 body {
-  /*background-image: url(images/background_1.jpg);
-  background-size: 100% auto;
-  background-attachment: fixed;*/
   background-color: white;
   font-family: Roboto, sans-serif;
   font-feature-settings: "kern", "liga", "pnum";
-  font-size: 20px;
-  line-height: 1.3;
-  margin-left: auto;
-  margin-right: auto;
-  width: 1100px;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
-.container.header-contianer {
-  height: 150px;
-}
-
-div.header-left {
-  float: left;
-  width: 280px;
-}
-
-.header-left h1 {
-  font-weight: 700;
-  margin-top: 33px;
-  margin-bottom: 0px;
-}
-
-.header-left h2 {
-  font-size: 20px;
-  font-weight: 5;
-  margin-top: 0px
-}
-
-div.header-right {
-  float: right;
-  width: 300px;
-  text-align: right;
-}
-
-.header-right p {
-  text-align: right;
-}
-
-.button.button_link {
-  height: 40px;
-  width: 40px;
-}
-
-.button.button_link {
-  width: 40x;
-  height: 40px;
-  overflow: hidden;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-
-.button.button_link:hover {
-  border-radius: 50%;
-  -webkit-transform: rotate(360deg);
-  transform: rotate(360deg);
-}
-
-.icons_links ul {
-  margin-left: 0;
-  padding-left: 0;
-  padding-bottom: 4px;
-  text-align: center;
-}
-
-.icons_links li {
-  list-style-type: none;
-  display: inline;
-  margin: 5px;
-  text-decoration: none;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 1100px;
 }
 
 a {
-  font-weight: 100;
+  font-weight: 500;
   color: #333;
   text-decoration: none;
 }
@@ -96,164 +20,188 @@ a:hover {
   text-decoration: underline;
 }
 
-.icons_links a {
-  text-decoration: none;
+/* --- Header --- */
+.container.header-contianer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
 }
 
-h3 {
-  font-weight: 50;
-  font-size: 1.5em;
-  text-align: center;
-  border-bottom: solid 2px #333;
-  padding-bottom: 10px;
-  margin-bottom: 40px;
+.header-left h1 {
+  font-weight: 700;
+  margin: 10px 0 5px 0;
 }
 
-.container.intro-container {
-  height: 515px;
-}
-
-.profile-img {
-  border-radius: 50%;
-  height: 250px;
-  width: 250px;
-}
-
-p {
-  font-weight: 50;
-  font-size: 0.9em;
-  text-align: justify;
-}
-
-div.profile.image {
-  margin-left: 30px;
-  float: left;
-  width: 250px;
-}
-
-div.profile.info {
-  float: right;
-  width: 750px;
-  height: 420px;
-}
-
-ul.soft_skills {
-  margin: 0px;
-}
-
-.soft_skills li {
+.header-left h2 {
   font-size: 18px;
+  font-weight: 400;
+  margin: 0;
 }
 
-p.profile {
-  margin-bottom: 0px;
-  margin-top: 0px;
+.header-right {
+  text-align: right;
 }
 
-.skills-container p {
-  margin-left: 360px;
-  margin-top: 0;
-  margin-bottom: 0;
+.icons_links {
+  padding: 0;
+  margin: 0;
 }
 
-ul.hard_skills {
-  margin-left: 360px;
-  margin-top: 0px;
+.icons_links li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 0 5px;
 }
 
-.hard_skills li {
-  font-size: 18px;
-}
-
-.container.skills-container {
-  height: 2000px;
-}
-
-.experience th#job_description {
-  font-weight: 50;
-  font-size: 0.9em;
-  text-align: justify;
-  padding: 5px;
-}
-
-.experience {
-  height: 860px;
-}
-
-.experience h4 {
-  font-size: 22px;
-  margin: 1px;
-}
-
-.experience p {
-  font-weight: 100;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-#job_title .link {
-  font-style: italic;
-}
-
-#job_title {
-  width: 350px;
-  text-align: left;
-}
-
-.education p {
-  font-size: 18px;
-  margin: 1px;
-}
-
-.education h4 {
-  font-size: 18px;
-  margin: 0px;
-}
-
-.education {
-  margin-left: 350 px;
-  height: 150px;
-}
-
-.education_list {
-  margin-left: 350px;
-}
-
-.education p {
-  margin: 0px;
-}
-
-.extra {
-  height: 150px;
-}
-
-.extra ul {
-  margin: 0px;
-}
-
-.extra li {
-  font-size: 18px;
-}
-
-.button.button_top {
-  height: 60px;
-  width: 60px;
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  scroll-behavior: smooth;
+.button.button_link {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;        /* Makes the image round */
+  object-fit: cover;         /* Ensures image fills the circle */
   overflow: hidden;
-  -webkit-transition: all 0.5s ease;
+  display: inline-block;
   transition: all 0.5s ease;
 }
 
-.button.button_top:hover {
-  height: 70px;
-  width: 80px;
+.button.button_link:hover {
+  transform: rotate(360deg);
 }
 
+/* --- Section Titles --- */
+h3 {
+  font-size: 1.6em;
+  font-weight: 600;
+  text-align: center;
+  border-bottom: 2px solid #333;
+  padding-bottom: 10px;
+  margin: 40px 0 20px;
+}
+
+/* --- Skills Section --- */
+.skills-container p {
+  font-size: 1.1em;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+ul.hard_skills_aqa,
+ul.hard_skills_qa,
+.skills-container ul {
+  padding-left: 20px;
+  margin: 5px 0 20px;
+}
+
+.skills-container li {
+  font-size: 0.95em;
+  margin: 4px 0; /* compact spacing */
+  line-height: 1.4;
+}
+
+/* --- Experience Section --- */
+.experience-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.experience th,
+.experience td {
+  padding: 10px;
+  vertical-align: top;
+  text-align: left;
+}
+
+.experience h4 {
+  font-size: 1.1em;
+  margin: 0 0 5px;
+}
+
+.experience p {
+  margin: 3px 0;
+}
+
+#job_title {
+  width: 30%;
+}
+
+#job_description {
+  width: 70%;
+  font-size: 0.95em;
+}
+
+/* --- Education Section --- */
+.education h4,
+.education p {
+  margin: 0 0 10px;
+  font-size: 1em;
+}
+
+/* --- Languages --- */
+.languages-container ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.languages-container li {
+  font-size: 1em;
+  margin: 5px 0;
+}
+
+/* --- Footer --- */
 .footer-container p {
   text-align: center;
-  margin-bottom: 0px;
-  bottom: 5px
+  margin: 30px 0 0;
+  font-size: 0.9em;
+  color: #777;
+}
+
+/* --- Scroll Top Button --- */
+.button.button_top {
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  transition: all 0.3s ease;
+}
+
+.button.button_top:hover {
+  transform: scale(1.2);
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+    font-size: 15px;
+  }
+
+  .container.header-contianer {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .header-right {
+    text-align: left;
+    margin-top: 10px;
+  }
+
+  .experience-container table,
+  #job_title,
+  #job_description {
+    display: block;
+    width: 100%;
+  }
+
+  #job_title,
+  #job_description {
+    margin-bottom: 20px;
+  }
+
+  .button.button_top {
+    height: 40px;
+    width: 40px;
+  }
 }
