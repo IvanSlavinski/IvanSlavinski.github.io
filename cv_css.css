@@ -40,19 +40,25 @@ a:hover {
   margin: 0;
 }
 
-div.header-right {
-  float: right;
-  width: 300px;
-  text-align: right;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
-.header-right p {
+.header-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   text-align: right;
 }
 
 .icons_links {
+  list-style: none;
+  display: flex;
   padding: 0;
-  margin: 0;
+  margin-bottom: 5px;
 }
 
 .icons_links li {
@@ -61,18 +67,22 @@ div.header-right {
   margin: 0 5px;
 }
 
-.button.button_link {
+.button {
   width: 40px;
   height: 40px;
+  background-color: black;
   border-radius: 50%;
-  -webkit-transform: rotate(360deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  margin: 0 5px;
 }
 
-.button.button_link:hover {
-  transform: rotate(360deg);
+.button img {
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
 }
 
 /* --- Section Titles --- */
@@ -101,39 +111,45 @@ ul.hard_skills_qa,
 
 .skills-container li {
   font-size: 0.95em;
-  margin: 4px 0; /* compact spacing */
+  margin: 4px 0;
   line-height: 1.4;
 }
 
-/* --- Experience Section --- */
-.experience-container table {
-  width: 100%;
-  border-collapse: collapse;
+/* --- Experience Section (Flexbox) --- */
+.experience-entry {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
+  flex-wrap: wrap;
 }
 
-.experience th,
-.experience td {
-  padding: 10px;
-  vertical-align: top;
-  text-align: left;
+.job-title {
+  width: 25%;
+  min-width: 200px;
 }
 
-.experience h4 {
-  font-size: 1.1em;
-  margin: 0 0 5px;
-}
-
-.experience p {
-  margin: 3px 0;
-}
-
-#job_title {
-  width: 30%;
-}
-
-#job_description {
+.job-description {
   width: 70%;
+}
+
+.job-description p {
+  margin: 8px 0 4px;
+  font-weight: 600;
+}
+
+.job-description ul {
+  padding-left: 20px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.job-description li {
   font-size: 0.95em;
+  margin: 4px 0;
+  line-height: 1.4;
 }
 
 /* --- Education Section --- */
@@ -194,16 +210,13 @@ ul.hard_skills_qa,
     margin-top: 10px;
   }
 
-  .experience-container table,
-  #job_title,
-  #job_description {
-    display: block;
-    width: 100%;
+  .experience-entry {
+    flex-direction: column;
   }
 
-  #job_title,
-  #job_description {
-    margin-bottom: 20px;
+  .job-title,
+  .job-description {
+    width: 100%;
   }
 
   .button.button_top {
