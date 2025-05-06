@@ -95,7 +95,7 @@ div.header-right {
   object-fit: contain;
 }
 
-.button.button_link:hover {
+div.button_link:hover {
   transform: rotate(360deg);
 }
 
